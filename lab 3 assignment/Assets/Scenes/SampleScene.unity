@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96273c5ecd83e44287c8bedf64d63bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  courseName: Language Arts
+  courseName: DIG 4714C
   numMods: 5
   numReadMats: 10
   numQuiz: 5

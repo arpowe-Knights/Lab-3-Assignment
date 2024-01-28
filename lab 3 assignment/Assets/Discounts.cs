@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Discounts : MonoBehaviour
 {
+    // displays variables in inspector
     public int bookPrice = 0;
     public int bookCopies = 0;
     private const double Discount = 0.40;
@@ -17,6 +18,7 @@ public class Discounts : MonoBehaviour
         CalculateTotal();
     }
 
+    // calculates total for profit and wholesale and checks for "1st" book "additional" book cost 
     public void CalculateTotal()
     {
         if (bookCopies > 1)

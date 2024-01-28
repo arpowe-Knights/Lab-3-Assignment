@@ -1,9 +1,9 @@
 using UnityEngine;
-using UnityEditor;
 using System;
 
 public class Student : MonoBehaviour
 {
+    // Generate header and course details in inspector
     [Header("Course Details")]
 
     public string courseName = "DIG 4714C"; 
@@ -12,20 +12,22 @@ public class Student : MonoBehaviour
     public int numQuiz = 5;
     public int numAssignments = 10;
     public bool teacherAbility = true;
-
+    
+    // stored Grade weight/percentages
     private const double modWeight = 0.15;
     private const double readWeight = 0.30;
     private const double quizWeight = 0.15; 
     private const double assignmentWeight = 0.30;
     private const double teacherExp = 0.10;
 
+    // On start run calculator
     void Start()
     {
         courseDifficultyCal();
     }
 
 
-
+    // Calculates the difficulty of course (1-10) and displays output in console
     public void courseDifficultyCal()
     {
         double diffScore = (numMods * modWeight) + (numReadMats * readWeight) +
